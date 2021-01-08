@@ -1,0 +1,47 @@
+entity DefaultTemplates {
+    name String required,
+    contentStyle String required,
+    comments String,
+    approvedTemplateId String required,
+    createdBy String,
+	createdOn LocalDate,
+    updatedBy String,
+    updatedOn LocalDate
+}
+
+entity DefaultTemplatesFields {
+    name String required,
+    type DefaultFieldType required,
+    displayName String
+}
+
+enum DefaultFieldType {
+    STR,
+    NUM,
+    DROP_DOWN
+}
+
+
+relationship ManyToMany {
+	DefaultTemplates to DefaultTemplatesFields
+}
+
+application {
+  config {
+    baseName JobsOpsTool
+    applicationType monolith
+    serverPort 9001
+    devDatabaseType mysql
+    prodDatabaseType mysql
+    clientFramework react
+    clientPackageManager npm
+    authenticationType jwt
+    buildTool maven
+    enableSwaggerCodegen true
+    packageName com.quikr.jobs.tools
+  }
+  entities *
+  dto * with mapstruct
+  paginate * with infinite-scroll
+  service all with serviceImpl
+}
