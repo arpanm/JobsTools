@@ -1,0 +1,25 @@
+{
+  "jobsOpsToolApp": {
+    "defaultTemplatesFields": {
+      "home": {
+        "title": "DefaultTemplatesFields",
+        "createLabel": "Créer un nouveau Default Templates Fields",
+        "createOrEditLabel": "Créer ou éditer un Default Templates Fields",
+        "notFound": "Aucun Default Templates Fields trouvé"
+      },
+      "created": "Un nouveau Default Templates Fields a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Default Templates Fields avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Default Templates Fields avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Default Templates Fields {{ id }} ?"
+      },
+      "detail": {
+        "title": "Default Templates Fields"
+      },
+      "name": "Name",
+      "type": "Type",
+      "displayName": "Display Name",
+      "defaultTemplates": "Default Templates"
+    }
+  }
+}
