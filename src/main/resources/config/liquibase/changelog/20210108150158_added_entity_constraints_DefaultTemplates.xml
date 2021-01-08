@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity DefaultTemplates.
+    -->
+    <changeSet id="20210108150158-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="default_templates_id"
+                                 baseTableName="default_templates_default_templates_fields"
+                                 constraintName="default_templates_default_templ_default_templates_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="default_templates"/>
+
+        <addForeignKeyConstraint baseColumnNames="default_templates_fields_id"
+                                 baseTableName="default_templates_default_templates_fields"
+                                 constraintName="default_templates_default_templ_default_templates_fields_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="default_templates_fields"/>
+        
+    </changeSet>
+</databaseChangeLog>

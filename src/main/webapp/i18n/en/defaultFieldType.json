@@ -1,0 +1,10 @@
+{
+  "jobsOpsToolApp": {
+    "DefaultFieldType": {
+      "null": "",
+      "STR": "STR",
+      "NUM": "NUM",
+      "DROP_DOWN": "DROP_DOWN"
+    }
+  }
+}

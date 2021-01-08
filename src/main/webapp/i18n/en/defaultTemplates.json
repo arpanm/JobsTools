@@ -1,0 +1,30 @@
+{
+  "jobsOpsToolApp": {
+    "defaultTemplates": {
+      "home": {
+        "title": "Default Templates",
+        "createLabel": "Create a new Default Templates",
+        "createOrEditLabel": "Create or edit a Default Templates",
+        "notFound": "No Default Templates found"
+      },
+      "created": "A new Default Templates is created with identifier {{ param }}",
+      "updated": "A Default Templates is updated with identifier {{ param }}",
+      "deleted": "A Default Templates is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Default Templates {{ id }}?"
+      },
+      "detail": {
+        "title": "Default Templates"
+      },
+      "name": "Name",
+      "contentStyle": "Content Style",
+      "comments": "Comments",
+      "approvedTemplateId": "Approved Template Id",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "defaultTemplatesFields": "Default Templates Fields"
+    }
+  }
+}
