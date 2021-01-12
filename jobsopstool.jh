@@ -15,15 +15,58 @@ entity DefaultTemplatesFields {
     displayName String
 }
 
+entity UploadJob {
+	type UploadType,
+	url String,
+    status UploadStatus,
+	createdBy String,
+	createdOn LocalDate,
+    updatedBy String,
+    updatedOn LocalDate
+}
+
+entity QCashUploadRow {
+	babelUserId Long,
+    email String,
+    phone Long,
+    amount Float,
+    status QCashUploadRowStatus,
+    createdBy String,
+	createdOn LocalDate,
+    updatedBy String,
+    updatedOn LocalDate
+}
+
 enum DefaultFieldType {
     STR,
     NUM,
     DROP_DOWN
 }
 
+enum UploadType {
+	QCash,
+    Other
+}
+
+enum UploadStatus {
+	INIT,
+    PROCESSING,
+    PUSHED
+}
+
+enum QCashUploadRowStatus {
+	INIT,
+    PUSHED,
+    PROCESSING,
+    DONE
+}
 
 relationship ManyToMany {
 	DefaultTemplates to DefaultTemplatesFields
+}
+
+relationship OneToMany {
+	UploadJob to QCashUploadRow{jobId}
 }
 
 application {

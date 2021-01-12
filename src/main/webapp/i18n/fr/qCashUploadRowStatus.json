@@ -1,0 +1,11 @@
+{
+  "jobsOpsToolApp": {
+    "QCashUploadRowStatus": {
+      "null": "",
+      "INIT": "INIT",
+      "PUSHED": "PUSHED",
+      "PROCESSING": "PROCESSING",
+      "DONE": "DONE"
+    }
+  }
+}

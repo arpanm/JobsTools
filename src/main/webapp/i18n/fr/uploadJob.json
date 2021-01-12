@@ -1,0 +1,29 @@
+{
+  "jobsOpsToolApp": {
+    "uploadJob": {
+      "home": {
+        "title": "UploadJobs",
+        "createLabel": "Créer un nouveau Upload Job",
+        "createOrEditLabel": "Créer ou éditer un Upload Job",
+        "notFound": "Aucun Upload Job trouvé"
+      },
+      "created": "Un nouveau Upload Job a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Upload Job avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Upload Job avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Upload Job {{ id }} ?"
+      },
+      "detail": {
+        "title": "Upload Job"
+      },
+      "type": "Type",
+      "url": "Url",
+      "status": "Status",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "qCashUploadRow": "Q Cash Upload Row"
+    }
+  }
+}

@@ -20,6 +20,14 @@ import defaultTemplates, {
 import defaultTemplatesFields, {
   DefaultTemplatesFieldsState
 } from 'app/entities/default-templates-fields/default-templates-fields.reducer';
+// prettier-ignore
+import uploadJob, {
+  UploadJobState
+} from 'app/entities/upload-job/upload-job.reducer';
+// prettier-ignore
+import qCashUploadRow, {
+  QCashUploadRowState
+} from 'app/entities/q-cash-upload-row/q-cash-upload-row.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -35,6 +43,8 @@ export interface IRootState {
   readonly settings: SettingsState;
   readonly defaultTemplates: DefaultTemplatesState;
   readonly defaultTemplatesFields: DefaultTemplatesFieldsState;
+  readonly uploadJob: UploadJobState;
+  readonly qCashUploadRow: QCashUploadRowState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -52,6 +62,8 @@ const rootReducer = combineReducers<IRootState>({
   settings,
   defaultTemplates,
   defaultTemplatesFields,
+  uploadJob,
+  qCashUploadRow,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

@@ -1,0 +1,10 @@
+{
+  "jobsOpsToolApp": {
+    "UploadStatus": {
+      "null": "",
+      "INIT": "INIT",
+      "PROCESSING": "PROCESSING",
+      "PUSHED": "PUSHED"
+    }
+  }
+}

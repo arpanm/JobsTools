@@ -9,6 +9,8 @@
         "main": "Entités",
         "defaultTemplates": "Default Templates",
         "defaultTemplatesFields": "Default Templates Fields",
+        "uploadJob": "Upload Job",
+        "qCashUploadRow": "Q Cash Upload Row",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
