@@ -52,6 +52,9 @@ public class CacheConfiguration {
             createCache(cm, com.quikr.jobs.tools.domain.DefaultTemplates.class.getName() + ".defaultTemplatesFields");
             createCache(cm, com.quikr.jobs.tools.domain.DefaultTemplatesFields.class.getName());
             createCache(cm, com.quikr.jobs.tools.domain.DefaultTemplatesFields.class.getName() + ".defaultTemplates");
+            createCache(cm, com.quikr.jobs.tools.domain.UploadJob.class.getName());
+            createCache(cm, com.quikr.jobs.tools.domain.UploadJob.class.getName() + ".qCashUploadRows");
+            createCache(cm, com.quikr.jobs.tools.domain.QCashUploadRow.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

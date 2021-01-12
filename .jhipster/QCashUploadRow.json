@@ -1,0 +1,62 @@
+{
+  "name": "QCashUploadRow",
+  "fields": [
+    {
+      "fieldName": "babelUserId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "QCashUploadRowStatus",
+      "fieldValues": "INIT,PUSHED,PROCESSING,DONE"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "uploadJob",
+      "otherEntityRelationshipName": "qCashUploadRow",
+      "relationshipName": "jobId",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210112094011",
+  "entityTableName": "q_cash_upload_row",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["JobsOpsTool"]
+}

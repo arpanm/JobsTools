@@ -39,5 +39,5 @@
     "otherModules": [],
     "blueprints": []
   },
-  "entities": ["DefaultTemplates", "DefaultTemplatesFields"]
+  "entities": ["DefaultTemplates", "DefaultTemplatesFields", "UploadJob", "QCashUploadRow"]
 }

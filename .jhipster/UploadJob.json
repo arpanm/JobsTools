@@ -1,0 +1,54 @@
+{
+  "name": "UploadJob",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "UploadType",
+      "fieldValues": "QCash,Other"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "UploadStatus",
+      "fieldValues": "INIT,PROCESSING,PUSHED"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "qCashUploadRow",
+      "otherEntityRelationshipName": "jobId",
+      "relationshipName": "qCashUploadRow"
+    }
+  ],
+  "changelogDate": "20210112093911",
+  "entityTableName": "upload_job",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["JobsOpsTool"]
+}

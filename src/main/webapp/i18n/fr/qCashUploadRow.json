@@ -1,0 +1,31 @@
+{
+  "jobsOpsToolApp": {
+    "qCashUploadRow": {
+      "home": {
+        "title": "QCashUploadRows",
+        "createLabel": "Créer un nouveau Q Cash Upload Row",
+        "createOrEditLabel": "Créer ou éditer un Q Cash Upload Row",
+        "notFound": "Aucun Q Cash Upload Row trouvé"
+      },
+      "created": "Un nouveau Q Cash Upload Row a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Q Cash Upload Row avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Q Cash Upload Row avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Q Cash Upload Row {{ id }} ?"
+      },
+      "detail": {
+        "title": "Q Cash Upload Row"
+      },
+      "babelUserId": "Babel User Id",
+      "email": "Email",
+      "phone": "Phone",
+      "amount": "Amount",
+      "status": "Status",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "jobId": "Job Id"
+    }
+  }
+}

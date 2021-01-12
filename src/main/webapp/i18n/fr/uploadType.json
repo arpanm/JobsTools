@@ -1,0 +1,9 @@
+{
+  "jobsOpsToolApp": {
+    "UploadType": {
+      "null": "",
+      "QCash": "QCash",
+      "Other": "Other"
+    }
+  }
+}
